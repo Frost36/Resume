@@ -1,0 +1,77 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{textcomp}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Matthew}
+\familyname{McKay}
+\address{Carnegie Mellon University SMC 5655}{Pittsburgh, PA 15289}    % optional, remove the line if not wanted
+\mobile{301-244-9523}                    % optional, remove the line if not wanted
+\email{mjmckay@andrew.cmu.edu}                      % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Education}
+\cventry{2010--present}{Bachelor of Science in Computer Science}{Carnegie Mellon University}{Pittsburgh, PA}{\textit{GPA: 4.0/4.0} (Dean's List)}{ }  % arguments 3 to 6 can be left empty
+\cventry{2006--2010}{High School Diploma}{Poolesville High School}{Poolesville, MD}{\textit{GPA: 3.88/4.0, Weighted GPA: 4.75/5.0}}{ }
+\section{Experience}
+\cventry{2011--present}{Teaching Assistant for Principles of Functional Programming}{Carnegie Mellon University, School of Computer Science}{Pittsburgh, PA}{}{
+\begin{itemize}%
+\item Helped teach and guide students through learning functional programming
+\item Taught recitations, wrote homeworks, held office hours, graded papers
+\end{itemize}}\cventry{Summer 2009}{Student Research Intern}{University of Maryland}{College Park, MD}{}{
+\begin{itemize}%
+\item Developed a Java program that used Monte Carlo methods to play Bridge
+\item Used the program to experiment with a new method of averaging in the implementation of Monte Carlo methods to see how it impacted the program's performance in Bridge
+\end{itemize}}
+
+\section{Skills}
+\cvcomputer{Languages}{SML, Java, C, Actionscript}{Applications}{Eclipse, Mathematica, Phtoshop}
+\cvcomputer{Strong Work Ethic}{Will always get work done on time, as well as push others to do so}{Teamwork}{Have a lot of experience working on team projects}
+
+\section{Activities}
+\cvline{Game Creation Society}{\small Programmer of games, participated in Project Lucid in Fall 2010 and Project 101 Ways to Die in Spring 2011}
+\cvline{Robotics Club}{\small Programmer on the Colony project, using many simple robots to accomplish large tasks}
+\cvline{Game Programming}{\small Created approximately 10 Java-based games in spare time (including a Picross creator/player, a remake of Chip’s Challenge, an arcade shooter, and Jezzball)}
+
+\section{Projects}
+\cvline{Modeling Software}{\small Java application that can create and run basic experimental models (similar to STELLA)}
+\cvline{Student Manager}{\small Java application for creating and managing student project groups and seating charts for multiple graduation years}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
