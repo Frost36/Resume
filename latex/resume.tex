@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,letterpaper]{moderncv}
 
 % moderncv themes
 \moderncvtheme[grey]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -36,17 +36,19 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\section{Education}
-\cventry{2010 -- 2014}{Bachelor of Science in Computer Science (Minor in Mathematics)}{Carnegie Mellon University (Class of 2014)}{Pittsburgh, PA}{\textit{GPA: 3.97/4.0}}{}
-\cventry{2006 -- 2010}{High School Diploma}{Poolesville High School Science, Math, \& Computer Science Magnet Program}{Poolesville, MD}{\textit{GPA: 3.88/4.0, Weighted: 4.75/5.0}}{ }
 \section{Experience}
+\cventry{2014 -- Present}{Software Development Engineer II}{Amazon.com, Inc.}{Seattle, WA}{}{
+\begin{itemize}%
+\item Supply Chain Optimization Technology, Topology Team - Developed a full-stack AWS service for running high level optimization models of Amazon's shipping network
+\item Consumer Engagement, Sonar Team - Worked on the systems used for rendering and sending the millions of daily customer email notifications from Amazon
+\end{itemize}}
 \cventry{Fall 2013 -- Spring 2014}{Research/Senior Thesis}{Carnegie Mellon University}{Pittsburgh, PA}{}{
 \begin{itemize}%
 \item Worked on a methodology for verifying the correctness of a compiler phase by using a shared language to allow for compiled code to be verified against its source code
 \end{itemize}}
 \cventry{Summer 2013}{Software Engineering Intern}{Shopkick}{Redwood City, CA}{}{
 \begin{itemize}%
-\item Implemented mcommerce features to allow purchases in both Android and iOS apps
+\item Implemented M-commerce features to allow purchases in both Android and iOS apps
 \item Implemented server support for mcommerce, including pulling down transaction information and processing it
 \end{itemize}}
 \cventry{Fall 2012 -- Spring 2013}{Research/Independent Study}{Carnegie Mellon University}{Pittsburgh, PA}{}{
@@ -64,13 +66,13 @@
 \item Taught recitations, wrote homeworks, held office hours, graded papers
 \end{itemize}}
 
-\section{Skills}
-\cvcomputer{Languages}{SML, Python, C, Java, Javascript}{Software}{Vim, Git, Linux}
+\section{Education}
+\cventry{2010 -- 2014}{Bachelor of Science in Computer Science (Minor in Mathematics)}{Carnegie Mellon University (Class of 2014)}{Pittsburgh, PA}{\textit{GPA: 3.97/4.0}}{}
+\cventry{2006 -- 2010}{High School Diploma}{Poolesville High School Science, Math, \& Computer Science Magnet Program}{Poolesville, MD}{\textit{GPA: 3.88/4.0, Weighted: 4.75/5.0}}{ }
 
-\section{Activities \& Honors}
-\cvline{Phi Beta Kappa}{\small Inducted as a member into the Phi Beta Kappa Honor Society in 2014}
-\cvline{Greylock Hackfest 2012}{\small Worked in a group to develop $\tau$ (which was in the top ten projects), a webapp for students to submit code and view and respond to comments from teachers for instant feedback}
-\cvline{Game Creation Society}{\small Programmer of games, participated in multiple projects, including \textbf{Lucid} in Fall 2010 and project \textbf{101 Ways to Die} in Spring 2011}
+\section{Skills}
+\cvcomputer{Languages}{Java, Python, SML, C, Javascript}{AWS Services}{DynamoDB, S3, Lambda, ECS}
+\cvcomputer{Software}{Git, Linux, Vim, IntelliJ}{}{CloudFormation, API Gateway}
 
 \end{document}
 
